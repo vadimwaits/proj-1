@@ -1,0 +1,31 @@
++b('section').contacts-section
+  +e.map-col
+    +b#map
+  +e.text-col
+    +e('h1').title Контакты
+    +e.text Связывайтесь с нами сегодня!
+
+    +e.text-items__wr
+      +e.text-item
+        +e.text-title Пишите:
+        +e.text-content
+          a(href="#") say@helloworld.by
+
+      +e.text-item
+        +e.text-title Звоните:
+        +e.text-content
+          p +375 (29) 704-40-90
+
+      +e.text-item
+        +e.text-title Приходите:
+        +e.text-content
+          p ул. К. Крапивы, 34 #[br] Минск, Беларусь
+
+      +e.text-item
+        +e.text-title Мы в соцсетях:
+        +e.text-content
+          +b('ul').social-list
+            +e.item.twitter
+              a(href="#")
+            +e.item.fb
+              a(href="#")

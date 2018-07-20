@@ -1,0 +1,12 @@
++b.order-form
+  +e.inner
+    +e('h2').title Мы открыты для идей #[br] и предложений
+    +e('p').text Если у вас есть идеи или вы готовы начать, свяжитесь с нами
+    +b('form').form
+      +e.label
+        input(type="text" placeholder="Ваше имя" required="required")
+      +e.label
+        input(type="mail" placeholder="Электронная почта" required="required")
+      +e.label
+        textarea(placeholder="Сообщение")
+      +e('button')(type="submit").btn Отправить

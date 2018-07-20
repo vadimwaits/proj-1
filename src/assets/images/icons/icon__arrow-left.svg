@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="project" transform="translate(-405.000000, -3333.000000)" fill-rule="nonzero">
+            <g id="button" transform="translate(375.000000, 3313.000000)">
+                <g id="Group-5" transform="translate(30.000000, 11.000000)">
+                    <polygon id="left" transform="translate(8.000000, 14.500000) scale(-1, 1) translate(-8.000000, -14.500000) " points="10.5 9 9.8875 9.6125 14.3375 14.0625 0 14.0625 0 14.9375 14.3375 14.9375 9.8875 19.3875 10.5 20 16 14.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

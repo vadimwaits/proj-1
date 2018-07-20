@@ -1,0 +1,113 @@
+.order-form {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 52px 0 65px;
+  background-color: $red-CC;
+  @media #{$M_XS} {
+    padding: 40px 0 80px;
+  }
+  &__inner {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 20px;
+    text-align: center;
+    color: $white;
+  }
+  &__title {
+    margin-bottom: 29px;
+    line-height: 49px;
+    font-family: $font-bold;
+    font-size: 39px;
+    @media #{$M_XS} {
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 18px;
+    }
+  }
+  &__text {
+    font-size: 17px;
+    line-height: 1.4em;
+    @media #{$M_XS} {
+      font-size: 15px;
+    }
+  }
+}
+.form {
+  height: auto;
+  width: 100%;
+  margin-top: 63px;
+  @media #{$M_XS} {
+    margin-top: 48px;
+  }
+  &__label {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: $font-regular;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    color: $white;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    & input {
+      height: 40px;
+      padding-bottom: 8px;
+    }
+    & textarea {
+      height: 133px;
+      max-height: 133px;
+      resize: none;
+    }
+    & input,
+    & textarea {
+      width: 100%;
+      line-height: 36px;
+      font-size: inherit;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: $white;
+      @include placeholder {
+        font-size: 15px;
+        font-family: $font-regular;
+        color: $white;
+        text-indent: 0px;
+        transition: text-indent 0.3s ease;
+      }
+      &:focus {
+        @include placeholder {
+          text-indent: -500px;
+          transition: text-indent 0.3s ease;
+        }
+      }
+    }
+  }
+  &__btn {
+    height: 60px;
+    width: 100%;
+    margin-top: 50px;
+    line-height: 60px;
+    text-align: center;
+    font-family: $font-regular;
+    font-size: 19px;
+    border-radius: 3px;
+    background-color: $white;
+    color: $black-26;
+    &:hover {
+      color: $red-CE;
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+    @media #{$M_XS} {
+      margin-top: 30px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 17px;
+    }
+  }
+}

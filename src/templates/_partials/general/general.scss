@@ -1,0 +1,12 @@
+.content {
+  padding-top: #{$hdr-lrg};
+  @media #{$M_XS} {
+    padding-top: #{$hdr-mobile};
+  }
+}
+.header.scroll ~ .content {
+  padding-top: #{$hdr-sm};
+  & .index-company {
+    height: calc( 100vh - #{$hdr-sm});
+  }
+}

@@ -1,0 +1,12 @@
+extends _layouts/index.pug
+
+block content
+  +b.page-wr
+    include _partials/header/header
+    +b.content
+      include _partials/index-company/index-company
+      include _partials/portfolio-list/portfolio-list
+      +b('a')(href="#").expand-link
+        +b.inner Все проекты
+    include _partials/order-form/order-form
+    include _partials/footer/footer

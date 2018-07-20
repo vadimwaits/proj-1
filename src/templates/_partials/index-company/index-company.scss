@@ -1,0 +1,72 @@
+.index-company {
+  height: calc( 100vh - #{$hdr-lrg});
+  min-height: 510px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  background-color: $red-CC;
+  color: $white;
+  @media #{$M_SMX} {
+    min-height: 400px;
+  }
+  @media #{$M_XS} {
+    height: calc( 100vh - #{$hdr-mobile});
+  }
+  &__inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  &__title {
+    font-size: 67px;
+    font-family: $font-regular;
+    line-height: 76px;
+    @media #{$M_1280} {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    @media #{$M_XS} {
+      font-size: 44px;
+    }
+    @media #{$M_X3S} {
+      font-size: 25px;
+    }
+  }
+  &__text {
+    margin-top: 46px;
+    font-size: 19px;
+    line-height: 29px;
+    @media #{$M_SMX} {
+      font-size: 19px;
+      margin-top: 25px;
+    }
+    @media #{$M_XS} {
+      margin-top: 17px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+    @media #{$M_X3S} {
+      font-size: 15px;
+    }
+  }
+  &__anchor-btn {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+    border: 1px solid $white;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-image: svg-load('../images/icons/icon__arrow-down.svg', fill = $white);
+    &:hover {
+      opacity: 0.85;
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}

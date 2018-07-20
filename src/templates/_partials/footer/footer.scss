@@ -1,0 +1,124 @@
+.footer {
+  display: flex;
+  height: auto;
+  min-height: 72px;
+  width: 100%;
+  padding: 0 50px;
+  background-color: $red-CC;
+  @media #{$M_SMX} {
+    padding: 0 30px;
+  }
+  @media #{$M_XSM} {
+    justify-content: space-between;
+  }
+  &__inner {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid $white;
+    @media #{$M_XS} {
+      flex-flow: column wrap;
+      padding: 24px 20px 26px;
+    }
+  }
+  &__copyright {
+    margin-right: 15%;
+    font-family: $font-light;
+    font-size: 13px;
+    white-space: nowrap;
+    color: $white;
+    @media #{$M_SMX} {
+      margin-right: 12%;
+    }
+    @media #{$M_XSM} {
+      margin-right: 40px;
+    }
+    @media #{$M_XS} {
+      margin: 26px auto 0;
+      order: 3;
+    }
+  }
+  &__nav {
+    display: flex;
+    width: 100%;
+    max-width: 567px;
+    margin-right: 135px;
+    @media #{$M_XSM} {
+      margin-right: auto;
+    }
+    @media #{$M_XS} {
+      margin: 0 auto;
+      order: 1;
+    }
+  }
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media #{$M_XS} {
+      justify-content: center;
+    }
+  }
+  &__list-item {
+    margin-right: 15px;
+    font-size: 19px;
+    font-family: $font-regular;
+    color: $white;
+    @media #{$M_XS} {
+      margin: 0 10px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+    &:hover {
+      opacity: 0.75;
+      text-decoration: none;
+    }
+    & a {
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      color: inherit;
+    }
+  }
+  &__social-list {
+    display: flex;
+    margin-left: auto;
+    @media #{$M_XSM} {
+      margin-left: 40px;
+    }
+    @media #{$M_XS} {
+      margin: 26px 0 0;
+      order: 2;
+    }
+  }
+  &__social-item {
+    display: block;
+    height: 33px;
+    width: 34px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @media #{$M_XS} {
+      margin: 0 5px;
+    }
+    &:hover {
+      opacity: 0.85;
+    }
+    &:first-of-type {
+      margin-left: 0;
+      @media #{$M_XS} {
+        margin-left: 5px;
+      }
+    }
+    &.fb {
+      background-image: svg-load('../images/icons/icon__facebook.svg', fill = $white);
+    }
+    &.twitter {
+      background-image: svg-load('../images/icons/icon__twitter.svg', fill = $white);
+    }
+  }
+}

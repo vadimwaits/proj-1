@@ -1,0 +1,27 @@
+/*Core*/
+@import 'helpers/vars';
+@import 'helpers/mixins';
+
+/*Reset*/
+@import 'base/reset';
+
+/*Typography*/
+@import 'base/fonts';
+
+/*Scaffold*/
+@import 'base-scaffold/scaffold';
+
+/*Sprite-svg*/
+@import 'sprite-svg/_sprite-svg';
+@import 'sprite/sprite';
+
+/*Blocks*/
+@import '../../templates/_partials/header/header';
+@import '../../templates/_partials/index-company/index-company';
+@import '../../templates/_partials/portfolio-list/portfolio-list';
+@import '../../templates/_partials/order-form/order-form';
+@import '../../templates/_partials/contacts-section/contacts-section';
+@import '../../templates/_partials/company-section/company-section';
+@import '../../templates/_partials/portfolio-item/portfolio-item';
+@import '../../templates/_partials/general/general';
+@import '../../templates/_partials/footer/footer';

@@ -1,0 +1,117 @@
+.company-section {
+  height: auto;
+  width: 100%;
+  padding: 71px 20px 71px 40px;
+  background-color: $white;
+  @media #{$M_XS} {
+    padding: 15px 20px 50px 40px;
+  }
+}
+.text-inner-wr {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.intro-text {
+  width: 100%;
+  height: auto;
+  margin-bottom: 52px;
+  & .article-text {
+    margin-top: 39px;
+    @media #{$M_XS} {
+      margin-top: 20px;
+    }
+  }
+  @media #{$M_XS} {
+    margin-bottom: 25px;
+  }
+}
+.text-bold {
+  font-family: $font-bold;
+  font-size: 25px;
+  line-height: 34px;
+  @media #{$M_XS} {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+.color-red {
+  color: $red-C3;
+}
+.article-text {
+  font-size: 17px;
+  line-height: 34px;
+  @media #{$M_XS} {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+.article {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-bottom: 33px;
+  padding-bottom: 50px;
+  @media #{$M_XS} {
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    &:after {
+      display: none;
+    }
+  }
+  &:after {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-image: svg-load('../images/icons/icon__plus.svg');
+    @media #{$M_XS} {
+      left: 0;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  &__title {
+    margin-left: -50px;
+    margin-bottom: 20px;
+    font-family: $font-bold;
+    font-size: 49px;
+    line-height: 34px;
+    @media #{$M_XS} {
+      margin-bottom: 12px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+  &__sub-title {
+    margin-left: -50px;
+    font-size: 13px;
+    line-height: 28px;
+    color: $gray-8C;
+  }
+  &__title,
+  &__sub-title {
+    @media #{$M_SM} {
+      margin-left: 0;
+    }
+  }
+  & .article-text {
+    margin-top: 10px;
+  }
+}
+.sub-title {
+  font-size: 13px;
+  line-height: 28px;
+  color: $gray-8C;
+}
